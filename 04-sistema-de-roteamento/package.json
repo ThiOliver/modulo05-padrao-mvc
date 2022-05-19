@@ -1,0 +1,27 @@
+{
+  "name": "modulo05-padrao-mvc",
+  "version": "1.0.0",
+  "description": "Prática do módulo 5 - Padrão MVC",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiOliver/modulo05-padrao-mvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiOliver/modulo05-padrao-mvc/issues"
+  },
+  "homepage": "https://github.com/ThiOliver/modulo05-padrao-mvc#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
