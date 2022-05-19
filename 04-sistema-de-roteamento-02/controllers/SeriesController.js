@@ -1,9 +1,16 @@
+const path = require("path")
 const series = require('../models/series')
 
 const controller = {
     index: (req,res)=> res.send(series),
-    porGenero: (req,res)=> res.send(series.filter(serie => serie.genero.toLocaleLowerCase() == req.params.genero.toLocaleLowerCase())),
+    porGenero: (req,res)=> {
+        const genero = req.params.genero
 
+       const resultadoFiltrado = series.filter(serie => serie.genero.toLocaleLowerCase() === genero.toLocaleLowerCase())
+
+       res.send(resultadoFiltrado)
+},
+criar: (req,res) => res.sendFile(path.join(__dirname, "..", "views", "criar-serie.html"))
 }
 
 
